@@ -1,7 +1,7 @@
 use std::env;
 use std::process;
 
-use minigrep::Config;
+use mj_minigrep::Config;
 
 fn main() {
     let config: Config = Config::build(env::args()).unwrap_or_else(|err| {
@@ -13,7 +13,7 @@ fn main() {
 
     println!("In file {}", config.file_path);
 
-    if let Err(e) = minigrep::run(config) {
+    if let Err(e) = mj_minigrep::run(config) {
         eprintln!("Application error: {e}");
         process::exit(1);
     }
