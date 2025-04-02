@@ -2,5 +2,7 @@
 name = "mj_minigrep"
 version = "0.1.0"
 edition = "2021"
+description = "Welcome to mj minigrep project"
+license = "MIT OR Apache-2.0"
 
 [dependencies]
